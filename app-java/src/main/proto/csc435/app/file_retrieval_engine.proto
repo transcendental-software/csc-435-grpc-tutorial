@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "csc435.app";
+option java_outer_classname = "FileRetrievalEngineProto";
+
+service FileRetrievalEngine {
+    rpc IndexFile(IndexReq) returns (IndexRep) {}
+    rpc SearchFiles(SearchReq) returns (SearchRep) {}
+}
+
+message IndexReq {
+    int32 client_id = 1;
+    string document_path = 2;
+    map<string, int64> word_frequencies = 3;
+}
+
+message IndexRep {
+    string ack = 1;
+}
+
+message SearchReq {
+    string term = 1;
+}
+
+message SearchRep {
+    map<string, int64> document_frequencies = 1;
+}
