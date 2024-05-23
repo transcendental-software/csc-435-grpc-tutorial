@@ -31,10 +31,6 @@ public class Server {
         try {
             server.awaitTermination();
         } catch (InterruptedException e) { }
-
-        try {
-            server.awaitTermination();
-        } catch (InterruptedException e) { }
     }
 
     private class WaitForQuit implements Runnable {
