@@ -13,7 +13,7 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 120
 sudo update-alternatives --remove-all g++
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 110
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-12 120
-sudo apt install protobuf-compiler libprotobuf-dev protobuf-compiler-grpc libgrpc++-dev
+sudo apt install pkg-config protobuf-compiler libprotobuf-dev protobuf-compiler-grpc libgrpc++-dev
 ```
 
 To run the Java programs you will need to have Java 1.7.x and Maven 3.6.x installed on your systems. On Ubuntu 22.04 you can install Java and Maven using the following commands:
