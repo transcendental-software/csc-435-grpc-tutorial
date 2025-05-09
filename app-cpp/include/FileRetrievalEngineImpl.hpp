@@ -6,8 +6,6 @@
 
 #include "proto/file_retrieval_engine.grpc.pb.h"
 
-#include "Server.hpp"
-
 class FileRetrievalEngineImpl final : public fre::FileRetrievalEngine::Service
 {
     public:
